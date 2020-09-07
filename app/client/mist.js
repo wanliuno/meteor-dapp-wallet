@@ -16,7 +16,7 @@ updateMistBadge = function() {
     );
 
     mist.menu.setBadge(
-      EthTools.formatBalance(balance, '0.0 a', 'ether') + ' ETH'
+      EthTools.formatBalance(balance, '0.0 a', 'ether') + ' WLI'
     );
   }
 };
@@ -68,7 +68,7 @@ updateMistMenu = function() {
           position: 3 + index,
           name: account.name,
           badge:
-            EthTools.formatBalance(account.balance, '0 a', 'ether') + ' ETH',
+            EthTools.formatBalance(account.balance, '0 a', 'wanli') + ' WLI',
           selected: location.pathname === '/account/' + account.address
         },
         function() {
